@@ -18,8 +18,8 @@ body {
 .container {
     background: linear-gradient(191.34deg, #17181A -4.95%, #17181A 103.74%);
     border-radius: 39px;
-    width: min(90vw, 375px);
-    min-height: min(80vh, 568px);
+    width: 375px;
+    height: 568px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(7, 1fr);
@@ -80,18 +80,11 @@ button:active {
     grid-row: 7 / 8;
 }
 
-@media (max-width: 1060px) {
-    .calculadora {
-        width: 100vw;
-        min-height: 100vh;
-        padding: 15px;
+@media(max-width: 768px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
     }
 
-    .display {
-        font-size: 2rem;
-    }
-
-    button {
-        font-size: 1.2rem;
-    }
 }
