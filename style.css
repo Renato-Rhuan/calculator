@@ -82,8 +82,8 @@ button:active {
 
 @media (max-width: 1060px) {
     .calculadora {
-        width: 92vw;
-        min-height: 70vh;
+        width: 100vw;
+        min-height: 100vh;
         padding: 15px;
     }
 
