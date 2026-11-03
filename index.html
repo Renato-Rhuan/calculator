@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=
+.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;;,100;;,200;;,300;;,400;;,500;;,600;;,700;;,800;&,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <input class="display">
+        <button class="gray-btn" onclick="limparDisplay()">AC</button>
+        <button class="gray-btn" onclick="inverterSinal()">+/-</button>
+        <button class="blue-btn" onclick="adicionarCaractere(`%`)">%</button>
+        <button class="blue-btn" onclick="adicionarCaractere(`/`)">÷</button>
+        <button class="black-btn" onclick="adicionarCaractere(`7`)">7</button>
+        <button class="black-btn" onclick="adicionarCaractere(`8`)">8</button>
+        <button class="black-btn" onclick="adicionarCaractere(`9`)">9</button>
+        <button class="blue-btn mais" onclick="adicionarCaractere(`*`)">x</button>
+        <button class="black-btn" onclick="adicionarCaractere(`4`)">4</button>
+        <button class="black-btn" onclick="adicionarCaractere(`5`)">5</button>
+        <button class="black-btn" onclick="adicionarCaractere(`6`)">6</button>
+        <button class="blue-btn" onclick="adicionarCaractere(`-`)">-</button>
+        <button class="black-btn um" onclick="adicionarCaractere(`1`)">1</button>
+        <button class="black-btn dois" onclick="adicionarCaractere(`2`)">2</button>
+        <button class="black-btn tres" onclick="adicionarCaractere(`3`)">3</button>
+        <button class="blue-btn mais" onclick="adicionarCaractere(`+`)">+</button>
+        <button class="black-btn zero"onclick="adicionarCaractere(`0`)">0</button>
+        <button class="black-btn"onclick="adicionarCaractere(`.`)">.</button>
+        <button class="equal-btn equal" onclick="calcular()">=</button>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+</html>
